@@ -27,20 +27,17 @@ jobs:
       run: docker push zeromaxinc/ctrade-group
 
 
-    - name: Log in to Physical Server
-      uses: appleboy/ssh-action@master
-      with:
-        host: 157.230.98.254
-        username: root
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        port: 22
-        script: |
-          cd /root/ctrade
-          ls
-          kubectl delete -f kubernetes.yaml
-          kubectl apply -f kubernetes.yaml
+    # - name: Log in to Physical Server
+    #   uses: appleboy/ssh-action@master
+    #   with:
+    #     host: 157.230.98.254
+    #     username: root
+    #     key: ${{ secrets.SSH_PRIVATE_KEY }}
+    #     port: 22
+    #     script: |
+    #       cd /root/ctrade
+    #       ls
+    #       kubectl delete -f kubernetes.yaml
+    #       kubectl apply -f kubernetes.yaml
     
-    - name: Configuration Git
-      run: git config --global user.email "zeromax.adm@gmail.com" && git config --global user.name "zeromaxinc"
-
-    
+ 
