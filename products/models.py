@@ -25,3 +25,10 @@ class Product4(models.Model):
     cost = models.CharField(max_length=50)
 
 
+class ProductTop(models.Model):
+    image = models.ImageField(upload_to='media/')
+    text = models.TextField()
+    cost = models.CharField(max_length=50)
+
+
+

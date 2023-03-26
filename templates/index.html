@@ -50,42 +50,28 @@
                 </div>
                 <div class="col-xl-4">
                     <div class="row">
+                        {% for product in producttop %}
                         <div class="col-xl-12">
-                            <a href="#" class="product-box product-box-medium">
+                            <a href="{% url 'producttop' product.id %}" class="product-box product-box-medium">
                                 <div class="contents">
-                                    <span class="pretitle">$76,000.00</span>
+                                    <span class="pretitle">{{ product.cost }}</span>
                                     <h1 class="product-title">
-                                        <span>Equipment Hot Sale Chemical Electrolyte Making Pilot Plant</span></h1>
+                                        <span>{{ product.text }}</span></h1>
                                     <p></p>
-                                </div>
-                                <div class="product-thumb"><img src="{% static 'images/products/home4/iphone-13.webp' %}"
-                                        alt="product-thumb"></div>
-                            </a>
-                        </div>
-                        <div class="col-xl-12">
-                            <a href="#" class="product-box product-box-medium product-box-medium2">
-                                <div class="contents">
-                                    <span class="pretitle"></span>
-                                    <h1 class="product-title">Wood Furniture Board Door Window Frame Profile Making Machine </h1>
                                     <div class="view-collections go-btn"> <i
                                             class="fal fa-long-arrow-right"></i></div>
                                 </div>
-                                <div class="product-thumb"><img src="{% static 'images/products/home4/headphone.webp' %}"
-                                        alt="product-thumb"></div>
+
+
+                                <div class="product-thumb">
+                                    {% if product.image %}
+                                        <img src="{{ product.image.url }}"alt="product-thumb"></div>
+                                {% endif %}
                             </a>
                         </div>
-                              <div class="col-xl-12">
-                            <a href="#" class="product-box product-box-medium product-box-medium2">
-                                <div class="contents">
-                                    <span class="pretitle"></span>
-                                    <h1 class="product-title">Cereal Corn Flakes Making Machine Breakfast Cornmeals Production </h1>
-                                    <div class="view-collections go-btn"> <i
-                                            class="fal fa-long-arrow-right"></i></div>
-                                </div>
-                                <div class="product-thumb"><img src="{% static 'images/products/home4/10.webp' %}"
-                                        alt="product-thumb"></div>
-                            </a>
-                        </div>
+                        {% endfor %}
+
+
                     </div>
                 </div>
             </div>

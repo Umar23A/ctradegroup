@@ -3,16 +3,19 @@ from .models import *
 
 def index(request):
 
-      products1 = Product1.objects.all()
-      products2 = Product2.objects.all()
-      products3 = Product3.objects.all()
-      products4 = Product4.objects.all()
+    products1 = Product1.objects.all()
+    products2 = Product2.objects.all()
+    products3 = Product3.objects.all()
+    products4 = Product4.objects.all()
+    producttop = ProductTop.objects.all()
 
-      return render(request, 'index.html',{
-          'products1': products1,
-          'products2': products2,
-          'products3': products3,
-          'products4': products4
+    return render(request, 'index.html',{
+        'products1': products1,
+        'products2': products2,
+        'products3': products3,
+        'products4': products4,
+        'producttop': producttop
+
       })
 
 def productview(request, pk):
@@ -47,6 +50,13 @@ def productview4(request, lk):
 
     return render(request, 'product4.html', {
         'products4': products4
+    })
+
+def producttopview(request, id):
+    producttop = ProductTop.objects.filter(id=id).all()
+
+    return render(request, 'producttop.html', {
+        'producttop': producttop
     })
 
 
