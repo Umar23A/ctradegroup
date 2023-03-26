@@ -1,0 +1,26 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+{% for product in products1 %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                {% if product.image %}
+                    <img src="{{ product.image.url }}" alt="">
+                {% endif %}
+            </div>
+            <div class="col-lg-4 ms-5 mt-5">
+                <div class="fs-4">
+                    {{ product.text }}
+                </div>
+                <div class="action-wrap mt-4">
+                    <span class="product-price" style="color:#1D72FF">{{product.cost}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endfor %}
+
+{% endblock %}

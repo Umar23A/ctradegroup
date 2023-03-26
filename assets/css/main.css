@@ -17454,11 +17454,11 @@ element.style {
  * Footer Start Here
  */
 .footer {
-  background: #040404;
+  background: #0860a8;
 }
 .footer .footer-inner {
-  padding-top: 70px;
-  padding-bottom: 95px;
+  padding-top: 75px;
+  padding-bottom: 50px;
 }
 @media (max-width: 1200px) {
   .footer .footer-inner {
