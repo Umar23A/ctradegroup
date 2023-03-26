@@ -1,0 +1,958 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="darkmode" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTRADE</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/rt-icons.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/metisMenu.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/preloader.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/rtsmenu.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/variables/variable4.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+</head>
+
+<body>
+    <div id="weiboo-load">
+        <div class="preloader-new">
+            <svg class="cart_preloader" role="img" aria-label="Shopping cart_preloader line animation"
+                viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="8">
+                    <g class="cart__track" stroke="hsla(0,10%,10%,0.1)">
+                        <polyline points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80" />
+                        <circle cx="43" cy="111" r="13" />
+                        <circle cx="102" cy="111" r="13" />
+                    </g>
+                    <g class="cart__lines" stroke="currentColor">
+                        <polyline class="cart__top" points="4,4 21,4 26,22 124,22 112,64 35,64 39,80 106,80"
+                            stroke-dasharray="338 338" stroke-dashoffset="-338" />
+                        <g class="cart__wheel1" transform="rotate(-90,43,111)">
+                            <circle class="cart__wheel-stroke" cx="43" cy="111" r="13" stroke-dasharray="81.68 81.68"
+                                stroke-dashoffset="81.68" />
+                        </g>
+                        <g class="cart__wheel2" transform="rotate(90,102,111)">
+                            <circle class="cart__wheel-stroke" cx="102" cy="111" r="13" stroke-dasharray="81.68 81.68"
+                                stroke-dashoffset="81.68" />
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+    </div>
+    <header id="rtsHeader">
+        <div class="navbar-wrapper">
+            <div class="navbar-part navbar-part3 navbar-part4">
+                <div class="container">
+                    <div class="navbar-inner navbar-inner5">
+                        <a href="index.html" class="logo"><img src="{% static 'images/logo2.png' %}" alt="weiboo-logo"></a>
+                        <div class="navbar-select-area">
+                            <select class="topbar-select custom-select">
+                                <option value="eng">Eng</option>
+                                <option value="esp">Chi</option>
+                            </select>
+
+                        </div>
+                        <div class="header-action-items header-action-items1">
+                            <div class="search-part">
+                                <div class="search-icon action-item icon"><i class="rt-search"></i></div>
+                                <div class="search-input-area">
+                                    <div class="container">
+                                        <div class="search-input-inner inner-2">
+                                            <div class="input-div">
+                                                <input class="search-input input4" type="text"
+                                                    placeholder="Search by keyword or #">
+                                            </div>
+                                            <div class="search-close-icon"><i class="rt-xmark"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart action-item">
+                                <div class="cart-nav">
+
+                                </div>
+                            </div>
+                            <div class="wishlist action-item">
+
+                            </div>
+
+                        </div>
+                        <div class="hamburger"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-sticky lower-navbar-sticky lower-navbar-sticky4">
+            <div class="navbar-part navbar-part2 lower-navbar lower-navbar4">
+                <div class="container">
+                    <div class="navbar-inner">
+                        <a href="index.html" class="logo"><img src="../assets/images/logo-white.png" alt="ctrade-logo"></a>
+                        <div class="rts-menu">
+                            <nav class="menus menu-toggle">
+                                <ul class="nav__menu">
+                                    <li class="has-dropdown"><a class="menu-item active1" href="#">Home <i></i></a></li>
+                                    <li class="has-dropdown"><a class="menu-item" href="#">Shop</a></li></li>
+                                    <li><a class="menu-item" href="#contact">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="contact-info ml-auto">
+                            <span class="title">Get Support</span>
+                            <a href="mailto:info@ctradegroup.com" class="email-address info">info@ctradegroup.com</a>
+                        </div>
+                        <div class="hamburger"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <aside class="slide-bar">
+            <div class="offset-sidebar">
+                <a class="hamburger-1 mobile-hamburger-1 mobile-hamburger-2 ml--30" href="#"><span><i class="rt-xmark"></i></span></a>
+            </div>
+            <div class="offset-sidebar-main">
+                <div class="offset-widget mb-40">
+                    <div class="info-widget">
+                        <img src="assets/images/logo1.svg" alt="">
+                        <p class="mb-30">
+                            We must explain to you how all seds this mistakens idea denouncing pleasures and praising
+                            account.
+                        </p>
+                    </div>
+                    <div class="info-widget info-widget2">
+                        <h4 class="offset-title mb-20">Get In Touch </h4>
+                        <ul>
+                            <li class="info phone"><a href="tel:78090790890208806803">780 907 908 90, 208 806 803</a>
+                            </li>
+                            <li class="info email"><a href="email:info@webmail.com">info@webmail.com</a></li>
+                            <li class="info web"><a href="www.webexample.com">www.webexample.com</a></li>
+                            <li class="info location">13/A, New Pro State, NYC</li>
+                        </ul>
+                        <div class="offset-social-link">
+                            <h4 class="offset-title mb-20">Follow Us </h4>
+                            <ul class="social-icon">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- offset-sidebar end -->
+            <!-- side-mobile-menu start -->
+            <nav class="side-mobile-menu side-mobile-menu1 side-mobile-menu2">
+                <ul id="mobile-menu-active">
+                    <li class="">
+                        <a class="mm-link" href="index.html">Home</a>
+                    </li>
+                    <li class="">
+                        <a class="mm-link" href="#">Shop <i class="rt-angle-down"></i></a>
+                    </li>
+                    <li><a class="mm-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-action-items header-action-items1 header-action-items-side">
+                <div class="search-part">
+                    <div class="search-icon action-item icon"><i class="rt-search"></i></div>
+                    <div class="search-input-area">
+                        <div class="container">
+                            <div class="search-input-inner">
+                                <select id="custom-select">
+                                    <option value="hide">All Catagory</option>
+                                    <option value="all">All</option>
+                                    <option value="men">Men</option>
+                                    <option value="women">Women</option>
+                                    <option value="shoes">Shoes</option>
+                                    <option value="shoes">Glasses</option>
+                                    <option value="shoes">Bags</option>
+                                    <option value="shoes">Assesories</option>
+                                </select>
+                                <div class="input-div">
+                                    <div class="search-input-icon"><i class="rt-search mr--10"></i></div>
+                                    <input class="search-input" type="text" placeholder="Search by keyword or #">
+                                </div>
+                                <div class="search-close-icon"><i class="rt-xmark"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart action-item">
+                    <div class="cart-nav">
+                        <div class="cart-icon icon"><i class="rt-cart"></i><span class="wishlist-dot icon-dot">3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="wishlist action-item">
+                    <div class="favourite-icon icon"><i class="rt-heart"></i><span class="cart-dot icon-dot">0</span>
+                    </div>
+                </div>
+                <a href="login.html" class="account"><i class="rt-user-2"></i></a>
+            </div>
+        </aside>
+    </header>
+
+    <div class="banner banner-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8">
+                    <div class="swiper bannerSlider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="product-box product-box-large">
+                                    <div class="contents">
+                                        <span class="pretitle">Dairy Equipment For Sale Uk</span>
+                                        <h1 class="product-title">
+                                            Milk Cooling <br> Tanks South <br> AfricaMilk <br> Cooling Tank <br>
+                                            incredibly slim <br>
+                                            <span></span></h1>
+                                        <span class="product-price">
+                                            <span>Starts From</span>
+                                            $14,000.00
+                                        </span>
+                                    </div>
+                                    <div class="product-thumb"><img src="../assets/images/products/home4/laptop.jpg"
+                                            alt="product-thumb"></div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-box product-box-large">
+                                    <div class="contents">
+                                        <span class="pretitle">Weekend Discount</span>
+                                        <h1 class="product-title">Big screens in <br>
+                                            incredibly slim <br>
+                                            <span>designs...</span></h1>
+                                        <span class="product-price">
+                                            <span>Starts From</span>
+                                           $14,000.00
+                                        </span>
+                                    </div>
+                                    <div class="product-thumb"><img src="../assets/images/products/home4/laptop.jpg"
+                                            alt="product-thumb"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-navigation">
+                            <div class="swiper-button-prev slider-btn prev"><i class="fal fa-long-arrow-up"></i></div>
+                            <div class="swiper-button-next slider-btn next"><i class="fal fa-long-arrow-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <a href="#" class="product-box product-box-medium">
+                                <div class="contents">
+                                    <span class="pretitle">$76,000.00</span>
+                                    <h1 class="product-title">
+                                        <span>Equipment Hot Sale Chemical Electrolyte Making Pilot Plant</span></h1>
+                                    <p></p>
+                                </div>
+                                <div class="product-thumb"><img src="../assets/images/products/home4/iphone-13.webp"
+                                        alt="product-thumb"></div>
+                            </a>
+                        </div>
+                        <div class="col-xl-12">
+                            <a href="#" class="product-box product-box-medium product-box-medium2">
+                                <div class="contents">
+                                    <span class="pretitle"></span>
+                                    <h1 class="product-title">Wood Furniture Board Door Window Frame Profile Making Machine </h1>
+                                    <div class="view-collections go-btn"> <i
+                                            class="fal fa-long-arrow-right"></i></div>
+                                </div>
+                                <div class="product-thumb"><img src="../assets/images/products/home4/headphone.webp"
+                                        alt="product-thumb"></div>
+                            </a>
+                        </div>
+                              <div class="col-xl-12">
+                            <a href="#" class="product-box product-box-medium product-box-medium2">
+                                <div class="contents">
+                                    <span class="pretitle"></span>
+                                    <h1 class="product-title">Cereal Corn Flakes Making Machine Breakfast Cornmeals Production </h1>
+                                    <div class="view-collections go-btn"> <i
+                                            class="fal fa-long-arrow-right"></i></div>
+                                </div>
+                                <div class="product-thumb"><img src="../assets/images/products/home4/10.webp"
+                                        alt="product-thumb"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rts-featured_products-section section-5 section-gap">
+        <div class="container">
+            <div class="section-header section-header4">
+                <span class="section-title section-title-2 mb--5">Our products</span>
+                <a href="#" class="go-btn">All Products <i class="fal fa-long-arrow-right"></i></a>
+            </div>
+            <div class="products-area">
+                <div class="swiper rts-fiveSlide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-item product-item4 card h-100">
+                                <a href="#" class="card-img-top">
+                                    <img src="../assets/images/products/log/1.webp" alt="product-image">
+                                </a>
+                                <div class="bottom-content card-body">
+                                    <span class="product-catagory card-title">Equipment</span>
+                                    <a href="#" class="product-name card-text">
+                                        Automatic line for the production of playing and sports balls CGL -4Р
+                                        <br>
+                                        "Origin: China
+                                        Condition: new
+                                        Warranty: 1 year"
+                                        "For more information, please contact the sales department"</a>
+                                    <div class="flex-wrap">
+                                        <div class="action-wrap">
+                                            <span class="product-price">$500000-850000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item product-item4 h-100">
+                                <a href="#" class="product-image">
+                                    <img src="../assets/images/products/log/2.webp" alt="product-image">
+                                </a>
+                                <div class="bottom-content">
+                                    <span class="product-catagory">Equipment</span>
+                                    <a href="#" class="product-name">Injection molding machine 2500 Thermal Plate Injection Molding Machine
+                                        <br> "Origin: China
+                                        Condition: new
+                                        Warranty: 1 year" <br>
+                                        "For more information, please contact the sales department"</a>
+                                    <div class="flex-wrap">
+                                        <div class="action-wrap">
+                                            <span class="product-price">$80000-625000</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item product-item4">
+                                <a href="#" class="product-image">
+                                    <img src="../assets/images/products/log/6-1.webp" alt="product-image">
+                                </a>
+                                <div class="bottom-content">
+                                    <span class="product-catagory">Equipment</span>
+                                    <a href="#" class="product-name">Extrusion blow molding machine with accessory mold
+                                        Extrusion extrusion equipment for the production of plastic products SLX-2L
+                                        <br>"Origin: China
+                                        Condition: new
+                                        Warranty: 1 year" <br>
+                                        "For more information, please contact the sales department"</a>
+                                    <div class="flex-wrap">
+                                        <div class="action-wrap">
+                                            <span class="product-price">$33000-68000</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item product-item4">
+                                <a href="#" class="product-image">
+                                    <img src="../assets/images/products/log/8.webp" alt="product-image">
+                                </a>
+                                <div class="bottom-content">
+                                    <span class="product-catagory">Equipment</span>
+                                    <a href="#" class="product-name">Semi-automatic line for metal processing Semi-automatic CGL -20 line for cold and hot metal processing under the individual customer's order
+                                        <br>Origin: China
+                                        Condition: new
+                                        Warranty: 1 year" <br>
+                                        "For more information, please contact the sales department"</a>
+                                    <div class="flex-wrap">
+                                        <div class="action-wrap">
+                                            <span class="product-price">$800000-1280000</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item product-item4">
+                                <a href="#" class="product-image">
+                                    <img src="../assets/images/products/log/9-1.png" alt="product-image">
+                                </a>
+                                <div class="bottom-content">
+                                    <span class="product-catagory">Equipment</span>
+                                    <a href="#" class="product-name">
+Line for the production of ABS baby rattles <br> with an ultrasonic device with nozzles included Automatic line for the production of children's plastic toys CGL -400V
+                                        <br>Origin: China
+                                        Condition: new
+                                        Warranty: 1 year" <br>
+                                        "For more information, please contact the sales department"</a>
+                                    <div class="flex-wrap">
+                                        <div class="action-wrap">
+                                            <span class="product-price">$192000-349000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination-area">
+                        <div class="swiper-pag"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="rts-featured_products-section section-5 section-gap">
+        <div class="container">
+            <div class="products-area">
+                <div class="swiper rts-fiveSlide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-item product-item4">
+                                <a href="#" class="product-image">
+                                    <img src="../assets/images/products/home4/1.webp" alt="product-image">
+                                </a>
+                                <div class="bottom-content">
+                                    <span class="product-catagory">Equipment</span>
+                                    <a href="#" class="product-name">Equipment Metal Machine HEADWAYCNC 20mm Tube Fiber Laser Cutting Machine Rotary Device Benefits:
+                                        Quick refunds on orders under US $1,000
+                                        Claim now
+                                        Model Number
+                                        TA-40-8</a>
+                                    <div class="flex-wrap">
+                                        <div class="action-wrap">
+                                            <span class="product-price">$23,500.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item product-item4">
+                                <a href="#" class="product-image">
+                                    <img src="../assets/images/products/home4/2.webp" alt="product-image">
+                                </a>
+                                <div class="bottom-content">
+                                    <span class="product-catagory">Equipment</span>
+                                    <a href="#" class="product-name">Equipment Brewing Equipment 200l 300l 500l 1000l 1500l 2000l Hotel Micro Beer Brewing Brewery Model Number
+                                        HLB0640402
+                                        Samples:
+                                        HLB0640402
+                                        $150.00/piece
+                                        "For more information, please contact the sales department"
+                                    </a>
+                                    <div class="flex-wrap">
+                                        <div class="action-wrap">
+                                            <span class="product-price">$13,000.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item product-item4">
+                                <a href="#" class="product-image">
+                                    <img src="../assets/images/products/log/2.webp" alt="product-image">
+                                </a>
+                                <div class="bottom-content">
+                                    <span class="product-catagory">Equipment</span>
+                                    <a href="#" class="product-name">Injection molding machine 2000 Thermal Plate Injection Molding Machine
+                                        <br> "Origin: China
+                                        Condition: new
+                                        Warranty: 1 year" <br>
+                                        "For more information, please contact the sales department"</a>
+                                    <div class="flex-wrap">
+                                        <div class="action-wrap">
+                                            <span class="product-price">$80000-625000</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item product-item4">
+                                <a href="#" class="product-image">
+                                    <img src="../assets/images/products/home4/5.webp" alt="product-image">
+                                </a>
+                                <div class="bottom-content">
+                                    <span class="product-catagory">Equipment</span>
+                                    <a href="#" class="product-name">Equipment Automatic Industrial Metal Plastic Shredder /tire Shredders Tyre Recycling US $500 coupons
+                                        Model Number
+                                        GXQ-6/GXQ-10/GXQ-16/GXQ-18/GXQ-20
+                                        Washing Capacity
+                                        85L/174L/292L/325L/360L
+                                        Samples:
+                                        GXQ-6/GXQ-10/GXQ-16/GXQ-18/GXQ-20
+                                        85L/174L/292L/325L/360L
+                                        "For more information, please contact the sales department"</a>
+                                    <div class="flex-wrap">
+                                        <div class="action-wrap">
+                                            <span class="product-price">$15,000.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item product-item4">
+                                <a href="#" class="product-image">
+                                    <img src="../assets/images/products/home4/6.webp" alt="product-image">
+                                </a>
+                                <div class="bottom-content">
+                                    <span class="product-catagory">Equipment</span>
+                                    <a href="#" class="product-name">Equipment Limestone Screening Machine Calcite Sand Linear Vibrating Sieve Idnustrial Quartz US $10 off with a new supplier
+                                        Model Number
+                                        OLM2 Pro S2 LU2-4 LF
+                                        $349.99
+                                        OLM2 Pro S2 LU2-4 SF
+                                        $349.99
+                                        OLM2 Pro S2 LU2-10W
+                                        $449.99
+                                        "For more information, please contact the sales department"</a>
+                                    <div class="flex-wrap">
+                                        <div class="action-wrap">
+                                            <span class="product-price">$1,580.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination-area">
+                        <div class="swiper-pag"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="rts-featured_products-section section-5 section-gap">
+        <div class="container">
+            <div class="products-area">
+                <div class="swiper rts-fiveSlide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-item product-item4">
+                                <a href="#" class="product-image">
+                                    <img src="../assets/images/products/home4/7.webp" alt="product-image">
+                                </a>
+                                <div class="bottom-content">
+                                    <span class="product-catagory">Equipment</span>
+                                    <a href="#" class="product-name">Multifunctional Staple Making Machine Benefits:
+                                        3-day coupon giveaway: up to US $80 off
+                                        Claim now
+                                        Model Number
+                                        HG-15
+                                        View all 10 options
+                                        Washing Capacity
+                                        10KG
+                                        View all 10 options
+                                        Samples:
+                                        HG-10
+                                        10KG
+                                        "For more information, please contact the sales department"</a>
+                                    <div class="flex-wrap">
+                                        <div class="action-wrap">
+                                            <span class="product-price">$6,300.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item product-item4">
+                                <a href="#" class="product-image">
+                                    <img src="../assets/images/products/home4/8.webp" alt="product-image">
+                                </a>
+                                <div class="bottom-content">
+                                    <span class="product-catagory">Equipment</span>
+                                    <a href="#" class="product-name">Equipment Different Types Kinds Of Low Price Aluminium Great Industrial Budget Cnc Best Automotive Easy W 3-day coupon giveaway: up to US $80 off Quick refunds on orders under US $1,000
+                                        Model Number
+                                        BM303-S-3-8PII
+                                        Samples:
+                                        BM303-S-3-8PII
+                                        $8,500.00/unit
+                                        Min. order : 1 unit
+                                        Model Number
+                                        RL-C100
+                                        200W
+                                        Samples:
+                                        RL-C100
+                                        $21,000.00/set
+                                        Min. order : 1 set
+                                        "For more information, please contact the sales department"</a>
+                                    <div class="flex-wrap">
+                                        <div class="action-wrap">
+                                            <span class="product-price">$11,500.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item product-item4">
+                                <a href="#" class="product-image">
+                                    <img src="../assets/images/products/home4/9.webp" alt="product-image">
+                                </a>
+                                <div class="bottom-content">
+                                    <span class="product-catagory">Equipment</span>
+                                    <a href="#" class="product-name">Press Wire Machine Hot Sale Steel Cable Pressing Wire Rope Press Machine With Mold Quick refunds on orders under US $1,000
+                                        Model Number
+                                        QD-600S
+                                        Production Capacity
+                                        400kg/h
+                                        Lead time:
+                                        Quantity (sets)	1 - 30	> 30
+                                        Lead time (days)	60	To be negotiated
+                                        "For more information, please contact the sales department"</a>
+                                    <div class="flex-wrap">
+                                        <div class="action-wrap">
+                                            <span class="product-price">$3,600.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item product-item4">
+                                <a href="#" class="product-image">
+                                    <img src="../assets/images/products/log/2.webp" alt="product-image">
+                                </a>
+                                <div class="bottom-content">
+                                    <span class="product-catagory">Equipment</span>
+                                    <a href="#" class="product-name">Injection molding machine 1600 Thermal Plate Injection Molding Machine
+                                        <br> "Origin: China
+                                        Condition: new
+                                        Warranty: 1 year" <br>
+                                        "For more information, please contact the sales department"</a>
+                                    <div class="flex-wrap">
+                                        <div class="action-wrap">
+                                            <span class="product-price">$80000-625000</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item product-item4">
+                                <a href="#" class="product-image">
+                                    <img src="../assets/images/products/log/2.webp" alt="product-image">
+                                </a>
+                                <div class="bottom-content">
+                                    <span class="product-catagory">Equipment</span>
+                                    <a href="#" class="product-name">Injection molding machine 1100 Thermal Plate Injection Molding Machine
+                                        <br> "Origin: China
+                                        Condition: new
+                                        Warranty: 1 year" <br>
+                                        "For more information, please contact the sales department"</a>
+                                    <div class="flex-wrap">
+                                        <div class="action-wrap">
+                                            <span class="product-price">$80000-625000</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination-area">
+                        <div class="swiper-pag"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="rts-posters-section section-5 section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3">
+                    <a href="#" class="product-box product-box-medium product-box-medium2">
+                        <div class="contents">
+                            <span class="pretitle"></span>
+                            <h1 class="product-title">Automatic Bottling Machine Price <br> Full <br> Automatic Water <br> Filling Line</h1>
+                            
+                        </div>
+                        <div class="product-thumb"><img src="../assets/images/products/home4/pot.webp" alt="product-thumb">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-6">
+                    <a href="#" class="product-box product-box-medium mid">
+                        <div class="contents">
+                            <span class="pretitle">Equipment</span>
+                            <h1 class="product-title">
+                                <span> Factory Directly Sale <br> Double Mitre Digital Display</span></h1>
+                            <p></p>
+                        </div>
+                        <div class="product-thumb"><img src="../assets/images/products/home4/phones.webp"
+                                alt="product-thumb"></div>
+                    </a>
+                </div>
+                <div class="col-xl-3">
+                    <a href="#" class="product-box product-box-medium product-box-medium3">
+                        <div class="contents">
+                            <span class="pretitle">Equipment</span>
+                            <h1 class="product-title">Intelligent X-ray Inspection <br> Equipment For  </h1>
+                            <div class="view-collections go-btn">Shop Now <i class="fal fa-long-arrow-right"></i></div>
+                        </div>
+                        <div class="product-thumb"><img src="../assets/images/products/home4/machine.webp"
+                                alt="product-thumb"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="rts-deal-section section-gap">
+        <div class="container position-relative">
+          
+            <div class="swiper oneSlide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="deal-box">
+                            <div class="deal-box-inner">
+                                <div class="deal-product">
+                                    <div class="product-area">
+                                        <div class="product detail-product one filterd-items">
+                                            <div class="product-thumb"><img
+                                                    src="../assets/images/products/home4/deal/product.webp"
+                                                    alt="product-thumb"></div>
+                                            <div class="contents">
+                                                <h2 class="product-title">Equipment Platform 200kg Goods Lift Table <br> Aluminium Alloy Platform Aerial Lift Equipment</h2>
+                                                <span class="product-price">$3,250.00 <span
+                                                        class="old-price"></span></span>
+                                            </div>
+                                        </div>
+                                        <div class="product detail-product two filterd-items hide">
+                                            <div class="product-thumb"><img
+                                                    src="../assets/images/products/home4/deal/product.webp"
+                                                    alt="product-thumb"></div>
+                                            <div class="contents">
+                                                <h2 class="product-title">Dragon Touch Max10 Tablet
+                                                    Android 10.0 OS</h2>
+                                                <span class="product-price">$129.99 <span
+                                                        class="old-price">$349.99</span></span>
+                                            </div>
+                                        </div>
+                                        <div class="product detail-product three filterd-items hide">
+                                            <div class="product-thumb"><img
+                                                    src="assets/images/products/home4/deal/product.png"
+                                                    alt="product-thumb"></div>
+                                            <div class="contents">
+                                                <h2 class="product-title">Dragon Touch Max10 Tablet
+                                                    Android 10.0 OS</h2>
+                                                <span class="product-price">$129.99 <span
+                                                        class="old-price">$349.99</span></span>
+                                            </div>
+                                        </div>
+                                        <div class="product detail-product four filterd-items hide">
+                                            <div class="product-thumb"><img
+                                                    src="assets/images/products/home4/deal/product.png"
+                                                    alt="product-thumb"></div>
+                                            <div class="contents">
+                                                <h2 class="product-title">Dragon Touch Max10 Tablet
+                                                    Android 10.0 OS</h2>
+                                                <span class="product-price">$129.99 <span
+                                                        class="old-price">$349.99</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="side-box">
+                                    <div class="product">
+                                        <div class="product-thumb"><img
+                                                src="../assets/images/products/home4/deal/side-product.webp"
+                                                alt="product-thumb"></div>
+                                        <div class="contents">
+                                            <span class="product-catagory">Equipment</span>
+                                            <h2 class="product-title">Equipment 1000l Brewing Equipment High Quality Used <br> Commercial High Quality Turnkey Brewery Equip</h2>
+                                            <span class="product-price">$25,000.00<span
+                                                    class="old-price"></span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-navigation">
+            <div class="swiper-button-prev slider-btn prev"><i class="fal fa-long-arrow-left"></i></div>
+            <div class="swiper-button-next slider-btn next"><i class="fal fa-long-arrow-right"></i></div>
+        </div>
+    </div>
+
+    <div class="product-details-popup-wrapper">
+        <div class="rts-product-details-section rts-product-details-section2 product-details-popup-section">
+            <div class="product-details-popup">
+                <button class="product-details-close-btn"><i class="fal fa-times"></i></button>
+                <div class="details-product-area">
+                    <div class="product-thumb-area">
+                        <div class="cursor"></div>
+                        <div class="thumb-wrapper one filterd-items figure">
+                            <div class="product-thumb zoom" onmousemove="zoom(event)"
+                                style="background-image: url(../assets/images/products/product-details.jpg)"><img
+                                    src="../assets/images/products/product-details.jpg" alt="product-thumb">
+                            </div>
+                        </div>
+                        <div class="thumb-wrapper two filterd-items hide">
+                            <div class="product-thumb zoom" onmousemove="zoom(event)"
+                                style="background-image: url(../assets/images/products/product-filt2.jpg)"><img
+                                    src="../assets/images/products/product-filt2.jpg" alt="product-thumb">
+                            </div>
+                        </div>
+                        <div class="thumb-wrapper three filterd-items hide">
+                            <div class="product-thumb zoom" onmousemove="zoom(event)"
+                                style="background-image: url(../assets/images/products/product-filt3.jpg)"><img
+                                    src="../assets/images/products/product-filt3.jpg" alt="product-thumb">
+                            </div>
+                        </div>
+                        <div class="product-thumb-filter-group">
+                            <div class="thumb-filter filter-btn active" data-show=".one"><img
+                                    src="../assets/images/products/product-filt1.jpg" alt="product-thumb-filter"></div>
+                            <div class="thumb-filter filter-btn" data-show=".two"><img
+                                    src="../assets/images/products/product-filt2.jpg" alt="product-thumb-filter"></div>
+                            <div class="thumb-filter filter-btn" data-show=".three"><img
+                                    src="../assets/images/products/product-filt3.jpg" alt="product-thumb-filter"></div>
+                        </div>
+                    </div>
+                    <div class="contents">
+                        <div class="product-status">
+                            <span class="product-catagory">Dress</span>
+                            <div class="rating-stars-group">
+                                <div class="rating-star"><i class="fas fa-star"></i></div>
+                                <div class="rating-star"><i class="fas fa-star"></i></div>
+                                <div class="rating-star"><i class="fas fa-star-half-alt"></i></div>
+                                <span>10 Reviews</span>
+                            </div>
+                        </div>
+                        <h2 class="product-title">Wide Cotton Tunic Dress <span class="stock">In Stock</span></h2>
+                        <span class="product-price"><span class="old-price">$9.35</span> $7.25</span>
+                        <p>
+                            Priyoshop has brought to you the Hijab 3 Pieces Combo Pack PS23. It is a
+                            completely modern design and you feel comfortable to put on this hijab.
+                            Buy it at the best price.
+                        </p>
+                        <div class="product-bottom-action">
+                            <div class="cart-edit">
+                                <div class="quantity-edit action-item">
+                                    <button class="button minus"><i class="fal fa-minus minus"></i></button>
+                                    <input type="text" class="input" value="01" />
+                                    <button class="button plus">+<i class="fal fa-plus plus"></i></button>
+                                </div>
+                            </div>
+                            <a href="cart.html" class="addto-cart-btn action-item"><i class="rt-basket-shopping"></i>
+                                Add To
+                                Cart</a>
+                            <a href="wishlist.html" class="wishlist-btn action-item"><i class="rt-heart"></i></a>
+                        </div>
+                        <div class="product-uniques">
+                            <span class="sku product-unipue"><span>SKU: </span> BO1D0MX8SJ</span>
+                            <span class="catagorys product-unipue"><span>Categories: </span> T-Shirts, Tops, Mens</span>
+                            <span class="tags product-unipue"><span>Tags: </span> fashion, t-shirts, Men</span>
+                        </div>
+                        <div class="share-social">
+                            <span>Share:</span>
+                            <a class="platform" href="http://facebook.com" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="platform" href="http://twitter.com" target="_blank"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="platform" href="http://behance.com" target="_blank"><i
+                                    class="fab fa-behance"></i></a>
+                            <a class="platform" href="http://youtube.com" target="_blank"><i
+                                    class="fab fa-youtube"></i></a>
+                            <a class="platform" href="http://linkedin.com" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contact" class="footer footer-3 footer-4">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 col-sm-6 box-widget-col">
+                        <div class="footer-widget footer-box-widget">
+                            <div class="quick-contact">
+                                <div class="phone contact-item">
+                                    <div class="footer-logo" ><img src="../assets/images/logo-white.png" alt="footer-logo"></div>
+                                </div>
+                                <div class="email contact-item">
+                                    <div class="icon"><img src="../assets/images/icons/mail2.png" alt="phone-icon">
+                                    </div>
+                                    <div class="contact-info">
+                                        <a href="mailto:info@ctradegroup.com"
+                                            class="email-address info">info@ctradegroup.com</a>
+                                        <span class="title">Get Support</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-13 col-md-6 col-sm-6">
+                        <div class="footer-widget">
+                            <h3 class="footer-widget-title">For number</h3>
+                            <ul class="widget-items cata-widget">
+                                <li class="widget-list-item"><a href="tel:+8615699223301">+86 156 9922 3301</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-25 col-md-6 col-sm-6">
+                        <h3 class="footer-widget-title">Address</h3>
+                        <ul class="footer-widget">
+                            <li class="widget-list-item"><a href="#">NO.1377, CHOUZHOU NORTH ROAD, <br> YIWU, ZHEJIANG PROVINCE, CHINA</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="footer-bottom-inner">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="scroll-top-btn scroll-top-btn1 scroll-top-btn2"><i class="fas fa-angle-up arrow-up"></i><i
+            class="fas fa-circle-notch"></i></div>
+
+    <script src="{% static 'js/vendors/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/vendors/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/vendors/wow.min.js' %}"></script>
+    <script src="{% static 'js/vendors/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'js/vendors/jquery.nice-select.js' %}"></script>
+    <script src="{% static 'js/vendors/metisMenu.min.js' %}"></script>
+    <script src="{% static 'js/vendors/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/vendors/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
