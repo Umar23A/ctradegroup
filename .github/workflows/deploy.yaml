@@ -18,10 +18,8 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
         script: |
+          git config --global user.email "abduaziz.botirov@mail.ru" && git config --global user.name "Abduaziz"
           cd /home/docmeduz/ctradegroup
           ls
           git pull
-
-    # - name: Configuration Git
-    #   run: git config --global user.email "test@gmail.com" && git config --global user.name "test"
 
