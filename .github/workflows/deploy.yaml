@@ -22,7 +22,7 @@ jobs:
     
 
     - name: Build the Docker image
-      run: docker build -t ctrade . && docker tag ctrade zeromaxinc/ctrade-group 
+      run: docker build -t ctrade . && docker tag ctrade zeromaxinc/ctrade-group
     - name: Docker push
       run: docker push zeromaxinc/ctrade-group
 
