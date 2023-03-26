@@ -167,13 +167,13 @@
                         <div class="swiper-slide">
                             <div class="product-item product-item4 card h-100">
                                 {% if product.image %}
-                                <a href="{% url 'product' product.id %}" class="card-img-top">
+                                <a href="{% url 'product3' product.id %}" class="card-img-top">
                                     <img src="{{ product.image.url }}" alt="product-image">
                                 </a>
                                 {% endif %}
                                 <div class="bottom-content card-body">
                                     <span class="product-catagory card-title">Equipment</span>
-                                    <a href="{% url 'product' product.id %}" class="product-name card-text">
+                                    <a href="{% url 'product3' product.id %}" class="product-name card-text">
 
                                         <br>
                                         {{ product.text|truncatechars:100 }} </a>

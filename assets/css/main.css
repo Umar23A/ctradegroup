@@ -17455,10 +17455,12 @@ element.style {
  */
 .footer {
   background: #0860a8;
+
 }
 .footer .footer-inner {
   padding-top: 75px;
   padding-bottom: 50px;
+
 }
 @media (max-width: 1200px) {
   .footer .footer-inner {
