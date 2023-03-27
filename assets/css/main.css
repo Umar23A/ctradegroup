@@ -57,6 +57,9 @@ html {
 body {
   font-family: "Jost", sans-serif;
   position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column
 }
 
 *,
