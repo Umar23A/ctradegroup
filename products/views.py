@@ -60,7 +60,20 @@ def producttopview(request, id):
     })
 
 def products(request):
-    return render(request, 'products.html')
+    products1 = Product1.objects.all()
+    products2 = Product2.objects.all()
+    products3 = Product3.objects.all()
+    products4 = Product4.objects.all()
+    producttop = ProductTop.objects.all()
+
+    return render(request, 'products.html', {
+        'products1': products1,
+        'products2': products2,
+        'products3': products3,
+        'products4': products4,
+        'producttop': producttop
+
+    })
 
 
 

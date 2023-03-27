@@ -1,41 +1,61 @@
 {% extends 'layouts/base.html' %}
 
 {% block content %}
-    <div class="container">
+    <h2 class="text-center">Our Products</h2>
+<div class="container mt-5">
     <div class="row">
+        {% for row in products1 %}
         <div class="col-lg-4">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="card shadow" style="width: 18rem;">
+                {% if row.image %}
+                <img src="{{ row.image.url }}" class="card-img-top" alt="...">
+                {% endif %}
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <p class="card-text">{{ row.text|truncatechars:100 }}</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        {% for row in products2 %}
         <div class="col-lg-4">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="card shadow" style="width: 18rem;">
+                {% if row.image %}
+                <img src="{{ row.image.url }}" class="card-img-top" alt="...">
+                {% endif %}
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <p class="card-text">{{ row.text|truncatechars:100 }}</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        {% for row in products2 %}
         <div class="col-lg-4">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="card shadow" style="width: 18rem;">
+                {% if row.image %}
+                <img src="{{ row.image.url }}" class="card-img-top" alt="...">
+                {% endif %}
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+                    <p class="card-text">{{ row.text|truncatechars:100 }}</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}
