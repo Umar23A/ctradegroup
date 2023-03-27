@@ -76,7 +76,8 @@ def products(request):
     })
 
 
-
+def productbottom(request):
+    return render(request, 'product4bottom.html')
 
 
 

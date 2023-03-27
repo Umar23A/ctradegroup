@@ -252,10 +252,11 @@
                                     <div class="product-area">
                                         {% for product in products4 %}
                                         <div class="product detail-product one filterd-items">
+
                                             {% if product.image %}
                                             <div class="product-thumb">
 
-                                                <img src="{{ product.image.url }}" alt="product-thumb">
+                                                <a href="{% url 'product4' product.id %}"><img src="{{ product.image.url }}" alt="product-thumb"></a>
 
                                             </div>
                                             {% endif %}
@@ -274,7 +275,7 @@
 
                                 <div class="side-box">
                                     <div class="product">
-                                        <div class="product-thumb"><img
+                                        <div class="product-thumb"><a href="{% url 'productbottom' %}"></a><img
                                                 src="{% static 'images/products/home4/deal/side-product.webp' %}"
                                                 alt="product-thumb"></div>
                                         <div class="contents">
