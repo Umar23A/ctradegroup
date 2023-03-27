@@ -17455,8 +17455,7 @@ element.style {
  */
 .footer {
   background: #0860a8;
-  bottom: 0;
-  width: 100%;
+  margin-top: auto;
 }
 .footer .footer-inner {
   padding-top: 75px;
