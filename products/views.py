@@ -59,6 +59,9 @@ def producttopview(request, id):
         'producttop': producttop
     })
 
+def products(request):
+    return render(request, 'products.html')
+
 
 
 
