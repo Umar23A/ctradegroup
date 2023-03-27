@@ -252,11 +252,13 @@
                                     <div class="product-area">
                                         {% for product in products4 %}
                                         <div class="product detail-product one filterd-items">
+                                            {% if product.image %}
                                             <div class="product-thumb">
-                                                {% if product.image %}
-                                                <img src="{{product.image.url}}" alt="product-thumb">
-                                                {% endif %}
+
+                                                <img src="{{ product.image.url }}" alt="product-thumb">
+
                                             </div>
+                                            {% endif %}
                                             <div class="contents">
                                                 <h2 class="product-title">{{ product.text }}</h2>
                                                 <span class="product-price">{{ product.cost }}<span
