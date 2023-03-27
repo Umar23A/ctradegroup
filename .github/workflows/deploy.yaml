@@ -33,7 +33,7 @@ jobs:
         host: 157.230.98.254
         username: root
         key: ${{ secrets.SSH_PRIVATE_KEY }}
-        port: 22
+        port: 22 
         script: |
           cd /root/ctrade
           ls
