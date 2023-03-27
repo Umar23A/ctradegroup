@@ -6,14 +6,15 @@
     <div class="row">
         {% for row in products1 %}
         <div class="col-lg-4">
-            <div class="card shadow" style="width: 18rem;">
+            <div class="card shadow mb-3" style="width: 18rem;">
                 {% if row.image %}
                 <img src="{{ row.image.url }}" class="card-img-top" alt="...">
                 {% endif %}
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+
                     <p class="card-text">{{ row.text|truncatechars:100 }}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">{{ row.cost }}</h5>
+                    <a href="{% url 'product' row.id %}" class="btn btn-primary">Show more</a>
                 </div>
             </div>
         </div>
@@ -25,14 +26,15 @@
     <div class="row">
         {% for row in products2 %}
         <div class="col-lg-4">
-            <div class="card shadow" style="width: 18rem;">
+            <div class="card shadow mb-3" style="width: 18rem;">
                 {% if row.image %}
                 <img src="{{ row.image.url }}" class="card-img-top" alt="...">
                 {% endif %}
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+
                     <p class="card-text">{{ row.text|truncatechars:100 }}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">{{ row.cost }}</h5>
+                    <a href="{% url 'product2' row.id %}" class="btn btn-primary">Show more</a>
                 </div>
             </div>
         </div>
@@ -42,16 +44,36 @@
 
 <div class="container mt-5">
     <div class="row">
-        {% for row in products2 %}
+        {% for row in products3 %}
         <div class="col-lg-4">
-            <div class="card shadow" style="width: 18rem;">
+            <div class="card shadow mb-3" style="width: 18rem;">
                 {% if row.image %}
                 <img src="{{ row.image.url }}" class="card-img-top" alt="...">
                 {% endif %}
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+
                     <p class="card-text">{{ row.text|truncatechars:100 }}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">{{ row.cost }}</h5>
+                    <a href="{% url 'product3' row.id %}" class="btn btn-primary">Show more</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        {% for row in producttop %}
+        <div class="col-lg-4">
+            <div class="card shadow mb-3" style="width: 18rem;">
+                {% if row.image %}
+                <img src="{{ row.image.url }}" class="card-img-top" alt="...">
+                {% endif %}
+                <div class="card-body">
+                    <p class="card-text">{{ row.text|truncatechars:100 }}</p>
+                    <h5 class="card-title">{{ row.cost }}</h5>
+                    <a href="{% url 'producttop' row.id %}" class="btn btn-primary">Show more</a>
                 </div>
             </div>
         </div>
