@@ -2,6 +2,13 @@
 
 {% block content %}
     <h2 class="text-center mt-3" style="color:#0a53be">Our Products</h2>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'index' %}#contact">Contact</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Products</li>
+        </ol>
+    </nav>
 <div class="container mt-5">
     <div class="row">
         {% for row in products1 %}
