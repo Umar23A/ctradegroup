@@ -22,7 +22,7 @@
                 <div class="card-body">
 
                     <p class="card-text">{{ row.text|truncatechars:100 }}</p>
-                    <div class="card-title fs-4">{{ row.cost }}</div>
+                    <div class="card-title fs-6">{{ row.cost }}</div>
                     <a href="{% url 'product' row.id %}" class="btn btn-primary">Show more</a>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                 <div class="card-body">
 
                     <p class="card-text">{{ row.text|truncatechars:100 }}</p>
-                    <div class="card-title fs-4">{{ row.cost }}</div>
+                    <div class="card-title fs-6">{{ row.cost }}</div>
                     <a href="{% url 'product2' row.id %}" class="btn btn-primary">Show more</a>
                 </div>
             </div>
@@ -62,7 +62,7 @@
                 <div class="card-body">
 
                     <p class="card-text">{{ row.text|truncatechars:100 }}</p>
-                    <div class="card-title fs-4">{{ row.cost }}</div>
+                    <div class="card-title fs-6">{{ row.cost }}</div>
                     <a href="{% url 'product3' row.id %}" class="btn btn-primary">Show more</a>
                 </div>
             </div>
@@ -81,7 +81,7 @@
                 {% endif %}
                 <div class="card-body">
                     <p class="card-text">{{ row.text|truncatechars:100 }}</p>
-                    <div class="card-title fs-4">{{ row.cost }}</div>
+                    <div class="card-title fs-6">{{ row.cost }}</div>
                     <a href="{% url 'producttop' row.id %}" class="btn btn-primary">Show more</a>
                 </div>
             </div>
